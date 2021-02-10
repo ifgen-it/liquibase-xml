@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="evgen_smirnov" id="4">
+        <insert tableName="employee">
+            <column name="first_name" value="Evgeniy"/>
+            <column name="last_name" value="Smirnov"/>
+            <column name="email" value="evgen@mail.ru"/>
+            <column name="company_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="first_name" value="Nikita"/>
+            <column name="last_name" value="Demin"/>
+            <column name="email" value="nikita@mail.ru"/>
+            <column name="company_id" valueNumeric="3"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="first_name" value="Olga"/>
+            <column name="last_name" value="Gorskih"/>
+            <column name="email" value="olya@mail.ru"/>
+            <column name="company_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="first_name" value="Alex"/>
+            <column name="last_name" value="Vakuluk"/>
+            <column name="email" value="vakul@mail.ru"/>
+            <column name="company_id" valueNumeric="6"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="first_name" value="Vova"/>
+            <column name="last_name" value="Tampashev"/>
+            <column name="email" value="vova@mail.ru"/>
+            <column name="company_id" valueNumeric="3"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
